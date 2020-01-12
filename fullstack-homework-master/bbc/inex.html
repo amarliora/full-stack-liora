@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bbc</title>
+
+    <style>
+        :root{
+        --gap-space:10px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+
+        .second-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border: 1px solid pink;
+            gap: var(--gap-space);
+        }
+
+        .container .main-news {
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            border: 1opx solid blue;
+            gap: var(--gap-space);
+        }
+        .second-news{
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            border:3px solid red; 
+            gap: var(--gap-space);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        ---UK's New Prime Minister--------------------------------------------------------------------
+        <div class="container">
+
+            <div class="component">
+                <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/132C3/production/_108013587_hi055486624.jpg"
+                    alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et.</p>
+            </div>
+            <div class="component">
+                <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/11D5B/production/_108015037_p07hqml3.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="component">
+                <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/1140D/production/_107996607_us-papers.jpg" alt="">
+                <p> Quibusdam illum magni totam voluptatum architecto sapiente tempore? Sapiente, libero?</p>
+            </div>
+            <div class="component">
+                <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/9EDD/production/_107996604_509c6520-5a2b-4249-b840-3686f69d407d.jpg"
+                    alt="">
+                <p>Quis eaque atque architecto odit consequuntur ratione aspernatur quae ut sequi ullam.</p>
+            </div>
+            <div class="component">
+                <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/96A9/production/_107996583_mediaitem107996582.jpg"
+                    alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et.</p>
+            </div>
+        </div>
+        Must See ----------------------------------------------------------------------------------------
+
+        <div class="second-container">
+            <div class="main-news">
+                <div class="component">
+                    <img src="https://ichef.bbci.co.uk/news/573/cpsprodpb/5847/production/_107999522_hi055470907.jpg"
+                        alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et.</p>
+                </div>
+            </div>
+
+            <div class="second-news">
+                <div class="component">
+                    <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/96A9/production/_107996583_mediaitem107996582.jpg"
+                        alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et.</p>
+                </div>
+                <div class="component">
+                    <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/96A9/production/_107996583_mediaitem107996582.jpg"
+                        alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et.</p>
+                </div>
+                <div class="component">
+                    <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/96A9/production/_107996583_mediaitem107996582.jpg"
+                        alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et.</p>
+                </div>
+                <div class="component">
+                    <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/96A9/production/_107996583_mediaitem107996582.jpg"
+                        alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et.</p>
+                </div>
+                <div class="component">
+                    <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/96A9/production/_107996583_mediaitem107996582.jpg"
+                        alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et.</p>
+                </div>
+                <div class="component">
+                    <img src="https://ichef.bbci.co.uk/news/240/cpsprodpb/96A9/production/_107996583_mediaitem107996582.jpg"
+                        alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

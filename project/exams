@@ -1,0 +1,31 @@
+create calculator
+
+1) create folder named calculator // v
+2) create index.html page , style.css , script.js // v
+3) add style to view a calculator with 3 input texts and 1 button for example in notebook  //v
+
+4 nice to have not nessary) all math operators 
+
+
+implemantation // מימוש
+
+add input type text 1 // v
+add input type text 2 // v
+add input type text 3 // v
+add button with value Calc // v
+
+get the value from input type 1 // query selector or getElementById and set the value to a variable
+get the value from input type 2 // query selector or getElementById and set the value to a variable
+
+
+create a new function that know to implement a plus from 2 numbers and insert a answer to input type 3
+
+
+add event to button (onClick) that execute a function 
+
+section B
+
+add input type 4 and check if the value is a 1 do plus if value is 2 do double
+
+
+

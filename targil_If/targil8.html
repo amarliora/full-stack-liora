@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function calculatePercentage(salary, percentage) {
+
+            let percent = (parseInt(salary) * percentage) / 100;
+            let NewSalary = parseInt(salary) + percent;
+            return NewSalary;
+        }
+
+        let name = prompt("enter your name");
+        let salary = prompt("enter your salary");
+        let str;
+
+        str = parseInt(salary)
+        
+
+        if (salary < 6000) {
+            newSalary = calculatePercentage(salary, 10)
+            alert(newSalary);
+        }
+        if (salary > 6000) {
+            newSalary = calculatePercentage(salary, 5)
+            alert(`${name} you are rich ${newSalary}`);
+        }
+
+    </script>
+</body>
+
+</html>

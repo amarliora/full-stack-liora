@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>facebook</title>
+</head>
+
+<style>
+    .wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        width: 990px;
+        height: 900px;
+        border: 1px solid black;
+        margin: auto
+    }
+
+    .nav {
+        grid-column: 1/6;
+        grid-row: 1;
+        height: 75px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .pages{
+            grid-column: 1;
+            grid-row: 2/3;
+            height: 800px;
+            width: 150px;
+            border: 1px solid red;
+    }
+
+    .stories{
+            grid-column: 2;
+            grid-row: 2/5;
+            width: 150px;
+            height: 350px;
+            border: 1px solid blue;
+    }
+
+    .wall{
+            grid-column: 3;
+            grid-row: 2/10;
+            width: 350;
+            height: 800px;
+            border: 1px solid green;
+    }
+
+    .comunication{
+            grid-column: 4;
+            grid-row: 2/5;
+            width: 150px;
+            height: 350px;
+            border: 1px solid orangered;
+    }
+
+
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="nav">
+
+        </div>
+
+        <div class="pages">
+
+        </div>
+
+        <div class="wall">
+
+        </div>
+        <div class="stories">
+
+        </div>
+
+        <div class="comunication">
+
+        </div>
+
+    </div>
+</body>
+
+</html>

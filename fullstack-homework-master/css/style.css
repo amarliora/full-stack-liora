@@ -1,0 +1,13 @@
+#amazing-title{
+    text-align: center;
+}
+
+body{
+    direction: rtl;
+}
+
+h3, p{
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

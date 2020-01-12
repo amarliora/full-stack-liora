@@ -1,0 +1,145 @@
+
+* {
+    padding: 0 0;
+    margin: 0 0;
+    font-family: 'OpenSans-Regular';
+    box-sizing: border-box;
+    background: rgb(207, 204, 204);
+}
+
+#wrap {
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+/* header*/
+.container1 {
+    padding: 0 15px 0 15px;
+    margin: 0 auto 0 auto;
+    border: 1px solid;
+
+
+}
+
+.header-top{
+    display: grid;
+    grid-template-columns:80% 20%;
+    border: #333 1px solid;
+}
+
+/* .top-menu {
+    display: flex;
+      justify-content: space-between;
+
+} */
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.Line {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin: 20px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 140px;
+}
+
+ul li {
+    display: none;
+    /* הנקודות לא נמחקות*/
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+
+}
+
+.search{
+    border-radius: 25px;
+}
+
+.container2 img {
+    width: 100%;
+    height: 500px;
+}
+
+.Categorys-Store {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category {
+    a: hover;
+
+}
+
+.category p {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.far,
+.fab {
+    font-size: 30px;
+}
+
+.fas {
+    font-size: 25px;
+}
+
+.fa-facebook {
+    color: rgb(59, 91, 152);
+
+}
+
+.fa-pinterest {
+    color: red;
+}
+
+.fa-envelope {
+    color: red;
+}
+
+.fa-linkedin {
+    color: rgb(59, 91, 152);
+}
+
+.fa-amazon-pay {
+    border-radius: 50%;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.heart,
+.card {
+    font-size: 25px;
+}
+
+.icons{
+    position: fixed;
+    top: 150 px;
+    left: 0px;
+    column-fill: auto;
+}

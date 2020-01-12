@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/hamberger.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>My Portfolio</header>
+        <div class="mainmenu" onclick="openMenu()">&#9776;MENU</div>
+        <div class="menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+            <a href="#">Help</a>
+            <a href="#" class='closebtn' onclick="closeMenu()">&times;</a>
+        </div>
+        <div class="carousel-container">
+            <button class='fas fa-angle-double-left prevBtn'>&#xf100</button>
+            <button class="fas fa-angle-double-right nextBtn">&#xf101</button>
+            <div class="carousel-slide">
+                    <img src="img/chat.jpg" alt="" style="width: 100%;height:30vw;">
+                <img src="img/bbc.jpg" alt="" style="width: 100%;height:30vw;" class="lastPic">
+                <img src="img/fashion.jpg" alt="" style="width: 100%;height:30vw;">
+                <img src="img/reposnsive.jpg" alt="" style="width: 100%;height:30vw;">
+                <img src="img/youtube.jpg" alt="" style="width: 100%;height:30vw;">
+            </div>
+        </div>
+    </div>
+    <div class="About_me"><h1>About me</h1></div>
+    <h3>Hi! I'm Liora - a Front End Web Developer . My expertise is in the area of ​​responsive design. With every line
+        of code, I strive to make the web a beautiful place.</h3>
+    </div>
+    <a href="" class="buttons" id = 'linking'>google</a>
+    <br>
+    <canvas></canvas>
+    <script src="js/carousel.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

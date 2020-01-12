@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>drag & drop</title>
+    <style>
+        .circle {
+            width: 50px;
+            height: 50px;
+            border: 1px solid;
+            border-radius: 50%;
+            margin: 10px;
+            background-color: aqua;
+
+        }
+
+        .rectangle {
+
+            width: 60px;
+            height: 60px;
+            border: 1px solid;
+            margin: 10px;
+            margin: auto;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="wrap">
+        <div id="test" class="rectangle" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="circle" id="dragElement" draggable="true" ondragstart="drag(event)"></div>
+    </div>
+    <p id="demo"></p>
+
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            id = ev.target.id;
+        }
+
+        function drop(ev) {
+            ev.target.append(document.getElementById(id));
+        }
+
+    
+// הגדרות משתנים
+
+//תגדירי משתנה שהוא מספר
+let x=5;
+//תגדירי משתנה שהוא מחרוזת
+let a="aba";
+//תגדירי משתנה שהוא מערך
+let c=[]
+//תגדירי משתנה שהוא אובייקט
+let person={ name:"liora"}
+
+
+    </script>
+
+</body>
+
+</html>

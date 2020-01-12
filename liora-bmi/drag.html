@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>drag</title>
+</head>
+<style>
+    #circle{
+        width:60px;
+        height: 60px;
+        border-radius: 50%;
+        background: tomato;
+        position: absolute;
+        /* z-index: 3; */
+    }
+    #target{
+        width: 150px;
+        height: 150px;
+        box-shadow: inset 2px 2px 6px gray;
+        position: absolute;
+        top:200px;
+        left: 50vw;
+        transition: all .5s;
+    }
+</style>
+<body>
+   
+    <div id='circle' draggable="true" ondragstart="dragStart(event)" ondrag="drag(event)" ondragend="dragEnd(event)"></div>
+    <div id="target" ondragover="dragover(event)" ondragleave="dragout(event)"></div>
+    
+    <script>
+        let adjustX, adjustY;
+        function dragStart(e){
+           
+             adjustX = e.layerX; adjustY = e.layerY
+           
+        }
+        function drag(e){
+            
+            e.target.style.left= `${e.x - adjustX}px`; 
+            e.target.style.top = `${e.y - adjustY}px`; 
+        }
+        function dragEnd(e){
+            e.target.style.left = `${e.x - adjustX}px`;
+            e.target.style.top = `${e.y - adjustY}px`; 
+        }
+        function dragover(e){
+          
+            e.target.style.boxShadow = '2px 2px 6px gray'
+            e.target.style.background = 'red'
+        }
+        function dragout(e){
+            e.target.style.boxShadow = 'inset 2px 2px 6px gray';
+            e.target.style.background = 'white';
+        }
+    </script>
+</body>
+</html>

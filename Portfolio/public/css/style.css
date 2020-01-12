@@ -1,0 +1,20 @@
+.h1 {
+    padding: 0 15px 0 15px;
+    margin: auto;
+    border: 1px solid;
+    text-align: center;
+   
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+}
+#carouselwithIndicators{
+    width: 100%;
+}
+
+.buttoms{
+    margin: 30px;
+
+}

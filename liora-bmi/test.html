@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bmi.css">
+    <title>bmi</title>
+</head>
+<body>
+   
+    <button onclick="CalculatorBmi(55, 1.65)">bmi</button>
+    <script>
+
+    
+        function calc3(a, b) {
+
+            if (a + b < 10) {
+                console.log('shimon');
+            }
+            else {
+                console.log('amar');
+            }
+
+        }
+        function Calculator(a, b) {
+
+            console.log(a + b);
+
+        }
+        function calc(a, b) {
+            console.log(a * b)
+
+        }
+        function calc2(a, b) {
+
+            console.log(a / b)
+        }
+
+
+        function calc5(a) {
+
+            if (a == 4) {
+                console.log('liora');
+            }
+            else if (a == 5) {
+                console.log('amar')
+            }
+            else if (a < 10 && a > 6) {
+
+                console.log('shimon')
+            }
+            else {
+                console.log('nan')
+            }
+        }
+
+        function CalculatorBmi(weight, Height){
+
+            let he= Height*Height;
+            console.log(weight/he)
+        }
+      
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>newspaper</title>
+    <style>
+       
+        .newspaper {
+            column-count: 2; /* מחלק את הדיב ל2 עמודות */
+            text-align: justify; /* מיישר את הטקסט כמו בעיתון */
+            max-width: 700px; /* רוחב האלמנט יגיע מקסימום עד המספר שהוגדר */
+            margin: 0 auto;/*מביא את הדיב לאמצע המסך*/
+
+        }
+
+        .newspaper p:first-of-type:first-letter {  /*מתייחס לאות ראשונה בפסקה*/
+            font-size: 30px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .newspaper h1 {  /* פורס כותרת על כל השורה*/
+            column-span: all;
+        }
+
+        .newspaper img {  /*עיצוב תמונה*/
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="newspaper">
+        <h1>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </h1>
+        <img src="images/travel.jpg" />
+        <p>
+            Lorem ipsum dolor sit amet consectetur
+            elit. Rerum facere dolore eos aspernatur
+            dolorum, sapiente est eaque commodi quib
+            nulla ullam aliquid, doloremque gfkdd
+            fuga mollitia eveniet soluta nemo tempora.
+            Lorem ipsum dolor sit amet consectetur
+            elit. Rerum facere dolore eos aspernatur
+            dolorum, sapiente est eaque commodi quib
+            nulla ullam aliquid, doloremque gfkdd
+            fuga mollitia eveniet soluta nemo tempora.
+            Lorem ipsum dolor sit amet consectetur
+            elit. Rerum facere dolore eos aspernatur
+            dolorum, sapiente est eaque commodi quib
+            nulla ullam aliquid, doloremque gfkdd
+            fuga mollitia eveniet soluta nemo tempora.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur
+            elit. Rerum facere dolore eos aspernatur
+            dolorum, sapiente est eaque commodi quib
+            nulla ullam aliquid, doloremque gfkdd
+            fuga mollitia eveniet soluta nemo tempora.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

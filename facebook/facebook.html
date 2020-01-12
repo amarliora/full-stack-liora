@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>facebook</title>
+    <script src="https://kit.fontawesome.com/cbe409865d.js"></script>
+</head>
+
+<style>
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        width: 1200px;
+        height: 900px;
+        border: 1px solid black;
+        margin: auto;
+    }
+
+    .nav {
+        grid-column: 1/6;
+        grid-row: 1;
+        height: 45px;
+        width: 100%;
+        background-color: #425782;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav input [type=text] {
+        padding: 6px;
+    }
+
+    .nav ul {
+        list-style-type: none;
+        padding: 0px;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    .nav ul a {
+        color: black;
+
+    }
+
+    .nav li {
+        display: inline-block;
+        width: 85px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        height: 30px;
+    }
+
+    .pages {
+        grid-column: 1;
+        grid-row: 2/3;
+        height: 800px;
+        width: 90%;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .stories {
+        grid-column: 2;
+        grid-row: 2/5;
+        width: 200px;
+        height: 350px;
+        border: 1px solid blue;
+        
+    }
+
+    .wall {
+        grid-column: 3;
+        grid-row: 2/10;
+        width: 95%;
+        height: 800px;
+        border: 1px solid green;
+    }
+
+    .comunication {
+        grid-column: 4;
+        grid-row: 2/5;
+        width: 150px;
+        height: 350px;
+        border: 1px solid orangered;
+    }
+
+    /*
+    styling facebook icons
+    */
+
+
+    .fa-facebook-square {
+        font-size: 30px;
+        color: white;
+    }
+
+    .fa-user-friends,
+    .fa-facebook-messenger {
+        font-size: 25px;
+        color: darkgray;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href=""> <i class="fab fa-facebook-square"></i></li>
+                    <li><a href="#"> <input type="text" placeholder="Search.."></a></li>
+                    <li><i class=""></i> אמר ליאורה</li>
+                    <li><i class=""></i>דף הבית</li>
+                    <li><i class=""></i>מצאי-חברים</li>
+                    <li><i class=""></i>צרי</li>
+                    <li><a href=""><i class="fas fa-user-friends"></i></li>
+                    <li><i class="fab fa-facebook-messenger"></i></li>
+                    <li><i class=""></i>paamon</li>
+                    <li><i class=""></i>?</li>
+                    <li><i class=""></i>icon-m</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="pages">
+
+        </div>
+
+        <div class="wall">
+
+        </div>
+        <div class="stories">
+
+        </div>
+
+        <div class="comunication">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

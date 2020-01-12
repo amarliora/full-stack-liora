@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>salaryOfDay</title>
+</head>
+
+<body>
+    <script>
+
+
+        function calcBmi(Height, Weight) {
+
+            let BMI = Weight / (Height * Height);
+
+            //let  result=Height*Height
+            // let BMI=Weight/result
+
+            return BMI
+        }
+
+        console.log(calcBmi(1.65, 50));
+
+
+        function calcPercentage(PercentageNum, amount) {
+
+            let dicount = PercentageNum * amount / 100;
+            let total = amount - dicount;
+
+            return total;
+        }
+
+        console.log(calcPercentage(30, 300));
+
+
+        let x = {
+
+            // myFunctuon: sayHello,
+            name: 'liora'
+        }
+        console.log(x.name)
+
+
+        //vatCalculator
+
+        function vatCalculator(price, vat) {
+
+            return price * (1 + vat);
+        }
+        //commisionCalculator
+
+        function commisionCalculator(price, commision) {
+
+            return price * (1 + commision);
+        }
+        //finalPriceClculator
+
+        function finalPriceClculator(price, commision, vat) {
+
+            return vatCalculator(commisionCalculator///////////
+            )
+        }
+
+
+        // targil 1
+
+        let sum = 0;
+
+        let arr1 = [50, 100, 150, 200];
+        let arr2 = [2, 4, 6, 8];
+        function calcTotalPrice(arr) {
+
+            for (i = 0; i < arr.length; i++) {
+
+                sum = sum + arr[i];
+            }
+
+            return sum;
+
+            console.dir()
+        }
+
+        console.log(calcTotalPrice(arr1));
+
+
+        // targil 2
+
+        function totalPayForMonth(HoursInWeek, fourWeek, PayOfHour) {
+
+            let totalhoursInMonth = HoursInWeek * fourWeek
+
+            return totalhoursInMonth * PayOfHour
+
+        }
+
+        console.log(totalPayForMonth(40, 4, 50))
+
+        // targil 3
+
+        let students = ["liora amar", "shimi amar", "adi oz"]
+
+
+        function listStudents() {
+
+            return students
+
+        }
+
+        console.log(listStudents(`list students : ${students}`));
+
+
+        //   targil 4
+
+        let students = [
+            { firstName: "liora", lastName: "amar", age: 33, },
+            { firstName: "shimi", lastName: "amar", age: 34 },
+            { firstName: "adi", lastName: "oz", age: 30 },
+            { firstName: "hi", lastName: "biton", age: 17 }
+        ]
+
+        function getAverageAge() {
+
+            return Average = (33 + 34 + 30) / 3;
+
+            let arr = students[age];
+        }
+
+        alert(getAverageAge(arr));
+
+
+        //targil 5
+
+        let students = [
+            { firstName: "liora", lastName: "amar", age: 33, },
+            { firstName: "shimi", lastName: "amar", age: 34 },
+            { firstName: "adi", lastName: "oz", age: 30 },
+            { firstName: "hi", lastName: "biton", age: 17 }
+        ]
+
+        let user = {
+            age: 18,
+            younger(otherUser) {
+                return otherUser.age < this.age;
+            }
+        };

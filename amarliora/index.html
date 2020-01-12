@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    :root {
+        --border: 1px solid black;
+    }
+
+    .screen {
+        margin: auto;
+        width: 1200px;
+        max-width: 100%;
+        background-color: rgb(167, 137, 194);
+        border: var(--border);
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+    }
+
+    .name {
+        border: 2px dashed rgb(185, 45, 68);
+
+    }
+
+    .pic {
+        border: 5px dotted pink;
+        width: 100%;
+        height: 220px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .wrapper {
+            grid-template-columns: repeat(1, 1fr);
+            color: rgb(241, 14, 230);
+            background-color: azure;
+            font-size: 52px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .menu {
+            animation-name: shimi;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+    
+        @keyframes shimi {
+            0% {
+                left: -100px;
+            }
+
+            50% {
+                left: 50px;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+    }
+
+    .menu {
+        background-color: rgb(43, 199, 152);
+        position: absolute;
+        left: -200px;
+    }
+</style>
+
+<body>
+    <div class="screen">
+        <div class="menu">
+            <ul>
+                <li>call liora</li>
+                <li>call edna</li>
+                <li>call yael</li>
+                <li>call lora</li>
+                <li>call adi</li>
+                <li>call hana</li>
+                <li>call anita</li>
+                <li>call miki</li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="name">liora</div>
+            <div class="pic"> <img src="1.jpg"></div>
+            <div class="name">edna</div>
+            <div class="pic"> <img src="2.jpg"></div>
+            <div class="name">yael</div>
+            <div class="pic"> <img src="3.jpg"></div>
+            <div class="name">lora</div>
+            <div class="pic"> <img src="4.jpg"></div>
+            <div class="name">adi</div>
+            <div class="pic"> <img src="5.jpg"></div>
+            <div class="name">hana</div>
+            <div class="pic"> <img src="6.jpg"></div>
+            <div class="name">anita</div>
+            <div class="pic"> <img src="7.jpg"></div>
+            <div class="name">michal</div>
+            <div class="pic"> <img src="8.jpg"></div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

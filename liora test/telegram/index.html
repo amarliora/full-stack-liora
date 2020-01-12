@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chatbox</title>
+
+    <style>
+        p {
+            margin: 0;
+        }
+
+        .chatbox {
+            width: 500px;
+            margin: 0 auto;
+            background: url("images/telegram.jpg")
+        }
+
+        .user-poto {
+            border-radius: 50%;
+            background-color: purple;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            margin: auto;
+            margin-left: -50px;
+        }
+
+        .chat {
+            background-color: #fff;
+            margin: 20px;
+            display: block;
+            margin-left: 50px;
+            border-radius: 15px;
+            position: relative;
+            padding: 5px;
+        }
+
+        .chat-message {
+            text-align: right;
+        }
+
+        .date-time {
+            text-align: right;
+            font-size: 13px;
+            color: #c2c2c2;
+        }
+
+        .today {
+            text-align: center;
+        }
+
+        .today span {
+            background-color: #3331315e;
+            border-radius: 20px;
+            padding: 2px 10px;
+        }
+
+        #chat-1 {
+            width: 350px;
+        }
+
+        #chat-2 {
+
+            width: 170px;
+        }
+
+        #chat-3 {
+            width: 170px;
+        }
+
+        #chat-4 {
+            width: 350px;
+        }
+
+        #chat-1 .name {
+            color: greenyellow;
+        }
+
+        #chat-2 .name {
+
+            color: red;
+        }
+
+        #chat-3 .name {
+            color: purple;
+        }
+
+        #chat-4 .name {
+            color: orange;
+        }
+
+        #chat-2 .user-poto {
+            background-color: green;
+        }
+
+        #chat-4 .user-poto {
+            background-color: palevioletred;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Emet create multiple divs: div.container>div.message>div.name+div.text+div.time+div.icon  -->
+    <div class="chatbox">
+
+        <header>
+            <div>3 points</div>
+            <div>
+                <div>Full Stack 3</div>
+                <div>F3</div>
+                <div>17 members</div>
+            </div>
+            <div></div>
+        </header>
+
+
+        <div class="today"><span>July 10</span></div>
+
+        <div id="chat-1" class="chat">
+            <div class="user-poto">SA</div>
+            <div class="name">name 1</div>
+            <p class="chat-message">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט</p>
+            <div class="date-time">12:00</div>
+        </div>
+
+        <div id="chat-2" class="chat">
+            <div class="user-poto">LA</div>
+            <div class="name">name 2</div>
+            <p class="chat-message">ורם איפסום דולור</p>
+            <div class="date-time">12:00</div>
+        </div>
+
+        <div id="chat-3" class="chat">
+            <div class="name">name 3</div>
+            <p class="chat-message">ורם איפסום דולור</p>
+            <div class="date-time">12:00</div>
+        </div>
+        <div id="chat-4" class="chat">
+            <div class="user-poto">NA</div>
+            <div class="name">name 3</div>
+            <p class="chat-message">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמ</p>
+            <div class="date-time">12:00</div>
+        </div>
+
+        <div class="chat">
+                <div class="user-poto">SA</div>
+                <div class="name">name 1</div>
+                <p class="chat-message">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט</p>
+                <div class="date-time">12:00</div>
+            </div>
+    
+            <div class="chat">
+                <div class="user-poto">LA</div>
+                <div class="name">name 2</div>
+                <p class="chat-message">ורם איפסום דולור</p>
+                <div class="date-time">12:00</div>
+            </div>
+    
+            <div class="chat">
+                <div class="name">name 3</div>
+                <p class="chat-message">ורם איפסום דולור</p>
+                <div class="date-time">12:00</div>
+            </div>
+            <div class="chat">
+                <div class="user-poto">NA</div>
+                <div class="name">name 3</div>
+                <p class="chat-message">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמ</p>
+                <div class="date-time">12:00</div>
+            </div>
+
+        <div class="chat-form">
+            <button>send</button>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

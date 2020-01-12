@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chat</title>
+    <style>
+    
+    :root {
+        --borderVar: solid red 1px;
+    }
+    
+    .wrap {
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        border: var(--borderVar);
+        text-align: left;
+      
+    }
+    h1{
+        text-align: center;
+       
+    }
+    .header{
+        color: white;
+        height:100%;
+        background-color:violet;
+        border-radius: 10px;
+        border: var(--borderVar);
+        padding:0 0 5px 5px ;
+    }
+
+    .box{
+        border: var(--borderVar);
+        padding: 10px;
+        border-radius: 30px;
+        margin: 10px;
+        align-items: center;
+    }
+    .left>:nth-child(odd) {
+        background-color: rgba(197, 197, 197, 0.568);
+    }
+
+    .right{
+        border: var(--borderVar);
+    
+    }
+
+    .right .listside{
+        border: var(--borderVar);
+       border-radius: 30px;
+       align-items:  center; ??????
+    }
+
+        /* ? parson2איך להקטין פ*/
+    .listside .person2{
+        width: 30;
+        height: 30px;
+    }
+    .right img{
+        width:50px ;
+    }
+
+    .liora {
+        color:pink;
+    }
+    .shimi {
+        color:blue;
+    }
+    .noam{
+        color:red;
+    }
+    .yagel{
+        color:greenyellow;
+    }
+    .nisim {
+        color:green;
+    }
+    .avishag {
+        color:purple;
+    }
+
+h2{
+    text-align: center;
+}
+    input,
+    button {
+        width: 80%;
+        height: 50px;
+        background-color: white;
+        border: solid blue 2px;
+        border-radius: 5px;
+        font-weight: bold;
+        justify-content: center;   /*איך למרכז*/
+    }
+
+    .button {
+        width: 50px;  /* ?   איך להקטין כפתור*/
+        height: 50px;
+    }
+    button:hover {
+        background-color: pink;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .right {
+            visibility: hidden;
+        }
+        .left {
+            grid-column: 1/end; ?????????????????????/
+            grid-row: 1/end;
+        }
+
+
+       
+        .left>:nth-child(odd) {    /* הצבע לא משתנה*/
+            background-color: rgb(212, 166, 255);
+        }
+        .left>:nth-child(even) {
+            background-color:lightpink;
+        }
+
+        .box>:first-child {    /* ?איך משתמשים*/
+            -webkit-text-stroke: 1px;
+            -webkit-text-stroke-color: black;
+            font-weight: bold;
+        }
+    }
+
+    @keyframes typing {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+ 
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent;
+        }
+        50% {
+            border-color:yellowgreen;
+        }
+    }
+
+    /*--------------------------------------------------------------*/
+    </style>
+</head> 
+<body>
+        <h1>chat message</h1>
+    <div class="header">
+        <p>full stack 3</p>
+            <small>6 members</small>
+    </div>
+<div class="wrap">
+    <div class="left">
+        <div class="box">
+            <div class="liora">
+                liora
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil itaque officiis dolorem neque error? Nesciunt!  
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="shimi">
+                shimi
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Niolorem neque error? Nesciunt!  
+                </p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="noam">
+                noam
+                <p>
+                  Lorem ipsum dolor sit amet consectetur  elit. Nihil itaque officiis dolorem neque error? Nesciunt!  
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="yagel">
+                yagel
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil itaque officiis dolorem neque error? Nesciunt!  
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="nisim">
+                nisim
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil itaque dolorem neque error? Nesciunt!  
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="avishag">
+                avishag
+                <p>
+                  Lorem ipsum  adipisicing elit. Nihil itaque officiis dolorem neque error? Nesciunt!  
+                </p>
+            </div>
+        </div>
+        <div>
+            <h2>Write a message...</h2>
+            <input type="text" name="Write a message..." class="NewText" placeholder="Write a message...">
+        </div>
+        <button type="button">Send</button>
+    </div>
+    <div class="right">
+        <h3>participants list</h3>
+        <div class="listside"><img src="person.png" alt="">liora</div>
+        <div class="listside person2"><img src="person2.png" alt="">shimi</div>
+        <div class="listside"><img src="person.png" alt="">noam</div>
+        <div class="listside"><img src="person2.png" alt="">yagel</div>
+        <div class="listside"><img src="person.png" alt="">nisim</div>
+        <div class="listside"><img src="person2.png" alt="">avishag</div>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
